@@ -1,0 +1,52 @@
+[
+  {
+    "id": "doc_001",
+    "title": "Hybrid Search Architectures",
+    "content": "Hybrid search combines dense vector embeddings with sparse BM25 indices to solve the vocabulary mismatch problem. While embeddings capture semantic nuance, sparse retrieval guarantees exact keyword matches on part numbers and identifiers. Reciprocal rank fusion mitigates ranking distribution differences."
+  },
+  {
+    "id": "doc_002",
+    "title": "Cross-Encoder Context Reranking",
+    "content": "Bi-encoder architectures enable sub-millisecond retrieval by pre-computing vector indices, but they lack token-level cross-attention between queries and candidate passages. Cross-encoder reranking mitigates context poisoning by recalculating joint attention over the top-50 candidates, filtering irrelevant noise."
+  },
+  {
+    "id": "doc_003",
+    "title": "Knowledge Graph Grounding and GraphRAG",
+    "content": "GraphRAG relies on hierarchical community detection using the Leiden algorithm to summarize entire corpora. Extracting subject predicate object triples enables multi-hop reasoning that vector search fails to resolve. Structural knowledge grounding mitigates hallucinations in broad thematic summarization."
+  },
+  {
+    "id": "doc_004",
+    "title": "Semantic Chunking and Parent Document Retrieval",
+    "content": "Naive fixed-token windowing splits logical sentences and severs context continuity. Semantic chunking relies on consecutive embedding cosine distance thresholds to identify true topic shifts. Parent document retrieval indexes small semantic sentences while feeding full paragraphs to the generator."
+  },
+  {
+    "id": "doc_005",
+    "title": "Automobile Maintenance Guide",
+    "content": "Regular automobile maintenance prevents breakdowns. A mechanic should inspect the brakes, tires, and engine oil every six months to keep a vehicle safe on the road."
+  },
+  {
+    "id": "doc_006",
+    "title": "Error Code Reference ERR-4039",
+    "content": "Error ERR-4039 indicates a database connection timeout. Restart the connection pool and verify that the network firewall allows traffic on the database port."
+  },
+  {
+    "id": "doc_007",
+    "title": "Error Code Reference ERR-4093",
+    "content": "Error ERR-4093 indicates an expired authentication token. Ask the user to sign in again to obtain a fresh token."
+  },
+  {
+    "id": "doc_008",
+    "title": "Part Catalog XJ-4021",
+    "content": "Part XJ-4021 is a stainless steel hex bolt with a length of forty millimeters. It is compatible with the XJ-4000 series pump housing."
+  },
+  {
+    "id": "doc_009",
+    "title": "Lost in the Middle",
+    "content": "Long prompts suffer from lost-in-the-middle attention decay, so passages placed in the center of a context window are used less by the model. Placing the best passages first or last reduces this effect."
+  },
+  {
+    "id": "doc_010",
+    "title": "Evaluation with the RAG Triad",
+    "content": "The RAG triad evaluates context relevance, faithfulness to the retrieved context, and answer relevance. A self-correction loop regenerates answers whose claims are not grounded."
+  }
+]
